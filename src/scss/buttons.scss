@@ -1,0 +1,55 @@
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  outline: 0;
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
+  line-height: var(--line-hight);
+  color: var(--body-color);
+  text-align: center;
+  text-decoration: none; 
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  background-color: transparent;
+  border: 0px solid transparent;
+
+
+  &:hover {
+    position: relative;
+  }
+
+
+  &:active,
+  &.active {
+ 
+    &:focus {position: relative;}
+  }
+
+  &:disabled,
+  &.disabled {
+    pointer-events: none;
+    opacity: 0.5; 
+  }
+}
+
+.btn-link {
+  font-weight: var(--font-weight);
+   
+
+  &:hover {
+    position: relative;
+  }
+
+  &:focus {
+    position: relative;
+  }
+
+  &:disabled,
+  &.disabled {
+    pointer-events: none;
+  }
+
+  
+}
